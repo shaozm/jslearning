@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <script type="application/javascript" src="hello.js"></script>
+  </head>
+  <body>
+    <p id = "vivo">vivo</p>
+    <p id = "xiaomi">xiaomi</p>
+    <p id = "oppo">oppo</p>
+    <script type="application/javascript" language="javascript">
+      var elements = document.getElementsByTagName('p');
+      var count = 0;
+      var output = "";
+      for (var element in elements) {
+        output += element.value + "<br>";
+        count ++;
+      }
+      document.write(count);
+      document.write(output);
+    </script>
+  </body>
+</html>

@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script type="text/javascript" src="hello.js"></script>
+	<!--<script type="text/javascript" src="hello.js"></script>-->
+	<script type="application/javascript" src="hello.js"></script>
 </head>
 <body>
 
 <h1>My First JavaScript</h1>
-
-
+<br>
 <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display Date and Time.</button>
+<br>
 <input type="button" onclick="sayHello()" value="click me!"/>
 <input type="button" onclick="document.getElementById('msgDisplay').innerHTML = writeMsg()" value="click to write msg!"/>
-
+<input type="button" onclick="redirect()" value="try redirect page"/>
+<input type="button" onclick="getConfirmation()" value="try confirm"/>
+<input type="button" onclick="getPrompt()" value="try prompt"/>
+<!--
 <script language="javascript" type="text/javascript">
 	document.write("Hello!");
 </script>
-
+-->
 
 <p id="demo"></p>
 <p id="msgDisplay"></p>
