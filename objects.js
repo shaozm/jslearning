@@ -37,9 +37,8 @@ console.log(Object.getPrototypeOf(person)); // [object Object] or {}
 //console.log(Object.getPrototypeOf(person.prototype));
 //TypeError: Cannot convert undefined or null to object
 
-/* NOK: why? */
 class Person {
-  contructor(firstName, lastName, age) {
+  constructor(firstName, lastName, age) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.age = age;
@@ -48,8 +47,8 @@ class Person {
     return this.firstName + " " + this.lastName;
   }
 }
-const pers = new Person("Amelia", "Shao", 2);
-console.log(pers.firstName);
+var p = new Person("Amelia", "Shao", 2);
+console.log(p.fullName() + " " + p.age);
 /* OK */
 class Polygon {
   constructor(height, width) {
