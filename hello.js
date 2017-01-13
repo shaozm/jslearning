@@ -3,11 +3,11 @@ var msg = "Hello world!";
 function writeMsg(){
 	//document.write(msg);
 	return msg;
-};
+}
 
 function sayHello() {
 	alert("hola!");
-};
+}
 
 function redirect() {
 	window.location = "http://www.google.com";
@@ -31,7 +31,7 @@ function getConfirmation() {
 
 function getPrompt() {
 	var retval = prompt("type your name:")
-	alert("you are " + retval);	
+	alert("you are " + retval);
 }
 
 //comment style1
